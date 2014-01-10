@@ -1,0 +1,14 @@
+
+<h3>What do you want to see?</h3>
+
+<div class="option container">
+<% @pagecontent.options.each do |option| %>
+
+    <div class="option">
+      <a href="<%= option.url %>">
+        <div class="option-navigation"><%= option.title %><img src="<%= option.image_url %>" />
+      </div></a>
+    </div>
+
+<% end %>
+</div>
